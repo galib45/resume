@@ -1,10 +1,12 @@
 \documentclass[a4paper,12pt]{article}
-\usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage[left=0.5in,right=0.5in,top=0.3in,bottom=0.5in]{geometry}
 \usepackage{enumitem}
 \usepackage{xcolor}
 \usepackage{titlesec}
 \usepackage{titling}
 \usepackage{fontawesome}
+\usepackage{graphicx}
+\usepackage{float}
 %% \usepackage{tcolorbox}
 %% \usepackage{tikz}
 
@@ -44,25 +46,32 @@
 %%         \end{tcolorbox}
 %%     };
 %% \end{tikzpicture}
-\begin{minipage}[t][2cm]{\textwidth}
-  \begin{minipage}[t]{0.63\textwidth}
+\vspace{-2pt}
+\begin{minipage}[t][3cm]{1.2\textwidth}
     \raggedright
+  \begin{minipage}[h][3cm]{0.4\textwidth}
     {\Huge\bfseries\color{black}Dr. Asadul Al Galib}
   \end{minipage}
-  \begin{minipage}[t]{0.04\textwidth}
+  \begin{minipage}[h][2.6cm][b]{0.03\textwidth}
       \faPhone\\
       \faMapMarker\\
       \faEnvelopeO
       %\faLinkedin
   \end{minipage}
-  \begin{minipage}[t]{0.26\textwidth}
+  \begin{minipage}[h][2.6cm][b]{0.28\textwidth}
       01521 430 992\\
       Jatrabari, Dhaka\\
       dr.asadul.algalib@gmail.com
       %linkedin.com/in/yourprofile
   \end{minipage}
+  \begin{minipage}[h][1.4cm][m]{0.1\textwidth}
+  %\begin{figure}[H]
+    \centering
+    \includegraphics[height=3cm]{galib-passport-size}
+  %\end{figure}
+  \end{minipage}
 \end{minipage}
-
+  
 \begin{minipage}[t][5.2cm]{0.98\textwidth}
   \section*{Profile}
   Accomplished MBBS graduate with a year of internship experience, specializing in effective teaching and mentoring. 

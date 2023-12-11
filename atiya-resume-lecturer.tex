@@ -1,0 +1,99 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[left=0.7in,right=0.7in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{fontawesome}
+%% \usepackage{tcolorbox}
+%% \usepackage{tikz}
+
+% Set the font to Arial
+\usepackage{fontspec}
+\setmainfont{Liberation Sans}[Scale=1.0]
+
+% Define custom colors
+\definecolor{darkblue}{RGB}{0,0,139}
+\definecolor{gray}{RGB}{128,128,128}
+
+% Customize section headings
+\titleformat{\section}{\Large\bfseries\color{black}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0em}{2em}{0.8em}
+
+\linespread{1.3}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\setlength{\parindent}{0pt}  % Remove first-line indent
+
+% Define a command for the main resume entries
+\newcommand{\resumeentry}[2]{
+    \textbf{#1} \\
+    \textit{#2}
+}
+
+\pagestyle{empty} % Disable page numbering
+
+\begin{document}
+
+%% \begin{tikzpicture}[remember picture, overlay]
+%%     \node [below, inner sep=0pt, anchor=north west] at (current page.north west) {
+%%         \begin{tcolorbox}[colback=gray!10, colframe=white, boxrule=0pt, arc=0pt, width=\paperwidth, height=3cm]
+%%             \vspace{0.8cm}\hspace{0.65cm}
+%%             \Huge\bfseries\color{black}Dr. Atiya Fyruz
+%%         \end{tcolorbox}
+%%     };
+%% \end{tikzpicture}
+\begin{minipage}[t]{\textwidth}
+    \raggedright
+    {\Huge\bfseries\color{black}Dr. Atiya Fyruz}
+    \vspace{1.5cm}    
+\end{minipage}
+\begin{minipage}[t][6.4cm]{\textwidth}
+\section*{Profile}
+  Recent MBBS graduate with a year of internship experience, ready to embark on a fulfilling journey in medical education. 
+  Possesses a solid foundation in medical science and a keen interest in teaching. 
+  Eager to transition into a Lecturer role at Shaheed Monsur Ali Medical College, bringing fresh perspectives and a commitment to fostering a positive learning environment. 
+  A dedicated learner with strong communication skills, poised to contribute to the academic growth of students in the medical field.
+\end{minipage}
+\begin{minipage}[t][12cm]{0.3\textwidth}
+\raggedright
+\section*{Contact}
+    \begin{minipage}[t]{0.1\textwidth}
+        \faPhone\\
+        \faMapMarker\\
+        \faEnvelopeO
+        %\faLinkedin
+    \end{minipage}
+    \begin{minipage}[t]{0.7\textwidth}
+        01782 400 884\\
+        Dhanmondi, Dhaka\\
+        atiyafyruz132@gmail.com
+        %linkedin.com/in/yourprofile
+    \end{minipage}
+\section*{Skills}
+\begin{itemize}[left=0em, itemsep=0pt, parsep=0pt]
+  \item Sound Medical Knowledge
+  \item Effective Communication
+  \item Adaptability
+  \item Technology Integration
+\end{itemize}
+
+%\section*{References}
+%Available upon request.
+\end{minipage}
+\hspace{1.4cm}
+\begin{minipage}[t][12cm]{0.6\textwidth}
+%\raggedright
+
+\section*{Education}
+  \resumeentry{MBBS}{January, 2017 - May, 2022}\\ Sir Salimullah Medical college, Dhaka \vspace{0.2cm} \\
+  \textbf{HSC}, \textit{2016}\\ Holy Cross College, Dhaka \vspace{0.2cm} \\
+  \textbf{SSC}, \textit{2014}\\ Mohammadpur Preparatory High School, Dhaka \\
+
+\section*{Experience}
+\resumeentry{Internship}{October, 2022 - September, 2023}\\ Sir Salimullah Medical College \vspace{0.2cm}\\
+\end{minipage}
+\end{document}
+
+

@@ -1,0 +1,118 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[left=0.5in,right=0.5in,top=0.7in,bottom=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{fontawesome}
+
+% Set the font to Arial
+\usepackage{fontspec}
+\setmainfont{Raleway}[Scale=1.0]
+\newfontfamily\numfont{Inter}[Scale=1.0, Color=303030]
+
+% Define custom colors
+\definecolor{darkblue}{RGB}{0,0,139}
+\definecolor{gray}{RGB}{128,128,128}
+
+% Customize section headings
+\titleformat{\section}{\addfontfeature{LetterSpace=10}\large\color{black}\uppercase}{}{0em}{}[\vspace{1mm}\titlerule]
+\titlespacing{\section}{0em}{2em}{1.2em}
+
+\linespread{1.3}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\setlength{\parindent}{0pt}  % Remove first-line indent
+
+% Define a command for the main resume entries
+\newcommand{\resumeentry}[2]{
+    \textbf{#1} \\
+    \textit{#2}
+}
+
+\pagestyle{empty} % Disable page numbering
+
+\begin{document}
+\begin{minipage}[t][4.4cm]{1.2\textwidth}
+    \raggedright
+    \begin{minipage}[h][2.8cm][h]{0.03\textwidth}
+      \faPhone\\
+      \faMapMarker\\ \\
+      \faEnvelopeO
+  \end{minipage}
+  \begin{minipage}[h][2.8cm][h]{0.28\textwidth}
+      \raggedright
+      {\numfont 01719 987 544}\\
+      House-{\numfont 8/A/4}, Road-{\numfont 14} (new), 
+      Dhanmondi (R/A), Dhaka\\
+      anika.tahshin{\numfont 97}@gmail.com
+  \end{minipage}
+\begin{minipage}[h][2.8cm][t]{0.34\textwidth}
+    \raggedleft
+    \addfontfeature{LetterSpace=2}
+    {\huge\bfseries\color{black}Dr. Anika Tahshin}\vspace{1mm} \\
+    \addfontfeature{LetterSpace=0}
+    \large{BMDC Reg. No: \numfont{A-125955}}
+  \end{minipage}
+
+\end{minipage}
+
+%\begin{minipage}[t][6.4cm]{\textwidth}
+%  \section*{About Me}
+%  I am a recent MBBS graduate with 1 year internship experience with a fervor for teaching, committed to nurturing the next generation of healthcare professionals through engaging and comprehensive medical education. My in-depth knowledge in basic subjects such as Anatomy, Physiology, Biochemistry, Microbiology Pharmacology, and Pathology, along with experience in teaching biology to high school and college students make me a strong fit for the role of a lecturer at Shaheed Monsur Ali Medical college.
+%\end{minipage}
+\begin{minipage}[t][12cm]{0.33\textwidth}
+\raggedright
+
+\section*{Education}
+  \resumeentry{MBBS}{January, {\numfont 2017} - May, {\numfont 2022}}\\ Sir Salimullah Medical college
+  \begin{itemize}[left=0em, topsep=2pt, itemsep=0pt, parsep=0pt]
+    \item Honors in Pathology
+  \end{itemize} \vspace{2mm}
+  \textbf{A Levels}, \textit{{\numfont 2016}}\\ Sunnydale School, Dhaka
+  \begin{itemize}[left=0em, topsep=2pt, itemsep=0pt, parsep=0pt]
+    \item World highest marks in Mathematics
+    \item Country highest marks in Physics, Chemistry and first place in Bangladesh
+  \end{itemize} \vspace{2mm}
+  \textbf{O Levels}, \textit{{\numfont 2014}}\\ Sunnydale School, Dhaka \\
+  \begin{itemize}[left=0em, topsep=0pt, itemsep=0pt, parsep=0pt]
+    \item World highest marks in Accounting
+  \end{itemize}
+\section*{Skills}
+\begin{itemize}[left=0em, itemsep=0pt, parsep=0pt]
+  \item Clear and effective communication skills
+  \item Adaptability to diverse learning styles  
+  \item Efficiency in development and delivery of structured lectures for optimal clarity 
+  \item Skilled in enhancing student engagement
+  \item Proficiency in clinical skills and interdisciplinary communication
+\end{itemize}
+
+%\section*{References}
+%Available upon request.
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}[t][12cm]{0.6\textwidth}
+\section*{About Me}
+  I am a recent MBBS graduate with 1 year internship experience with a fervor for teaching, committed to nurturing the next generation of healthcare professionals through engaging and comprehensive medical education. My in-depth knowledge in basic subjects such as Anatomy, Physiology, Biochemistry, Microbiology Pharmacology, and Pathology, along with experience in teaching biology to high school and college students make me a strong fit for the role of a lecturer at Shaheed Monsur Ali Medical college.
+\\
+\section*{Experience}
+\raggedright
+\resumeentry{Internship}{October, 2022 - September, 2023}\\ Sir Salimullah Medical College \vspace{0.2cm}\\
+\resumeentry{Content Creator and Marketing Officer}{2018 - 2020}
+\\ Callosum BD
+\begin{itemize}[left=0em, topsep=0pt, itemsep=0pt, parsep=0pt]
+  \item Generated educational content and implemented interactive elements and discussion forums to foster student engagement on this online platform 
+\end{itemize} \vspace{2mm}
+\textbf{Instructor}\\ MedX
+\begin{itemize}[left=0em, topsep=0pt, itemsep=0pt, parsep=0pt]
+  \item Conducted engaging free online live classes for undergraduate medical students 
+\end{itemize} \vspace{2mm}
+\textbf{Informal Teaching}
+\begin{itemize}[left=0em, topsep=0pt, itemsep=0pt, parsep=0pt]
+  \item Taught Biology to high school and college students and evaluated examination papers, providing constructive feedback to the students
+\end{itemize}
+\end{minipage}
+\end{document}
+
+

@@ -1,0 +1,129 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[left=0.9in,right=0.9in,top=0.8in,bottom=0.8in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{fontawesome}
+\usepackage{graphicx}
+\usepackage{float}
+
+% Set the font to Arial
+\usepackage{fontspec}
+\setmainfont{Liberation Sans}[Scale=1.0]
+
+% Define custom colors
+\definecolor{darkblue}{RGB}{0,0,139}
+\definecolor{gray}{RGB}{128,128,128}
+
+% Customize section headings
+\titleformat{\section}{\Large\bfseries\color{black}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0em}{2em}{0.8em}
+
+\linespread{1.3}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\setlength{\parindent}{0pt}  % Remove first-line indent
+
+% Define a command for the main resume entries
+\newcommand{\resumeentry}[2]{
+    \textbf{#1} \\
+    \textit{#2}
+}
+
+\pagestyle{empty} % Disable page numbering
+
+\begin{document}
+
+\begin{minipage}[t][2.5cm]{\textwidth}
+    \raggedright
+  \begin{minipage}[h][2cm][h]{\textwidth}
+    {\huge\bfseries\color{black}Dr. Asadul Al Galib}\\
+    \large{BMDC Reg. No - 126870}
+  \end{minipage}
+  %\begin{minipage}[h][2.8cm][h]{0.03\textwidth}
+  %    \faPhone\\
+  %    \faMapMarker\\
+  %    \faEnvelopeO
+  %\end{minipage}
+  %\begin{minipage}[h][2.8cm][h]{0.28\textwidth}
+  %    01521 430 992\\
+  %    490, North Donia, Jatrabari, Dhaka\\
+  %    dr.asadul.algalib@gmail.com
+  %\end{minipage}
+  %\begin{minipage}[h][1.4cm][m]{0.1\textwidth}
+  %  \centering
+  %  \includegraphics[height=3cm]{galib-passport-size}
+  %\end{minipage}
+\end{minipage} 
+\begin{minipage}[t][6.6cm]{\textwidth}
+  \section*{Profile}
+	Dedicated medical professional with internship experience at Sir Salimullah Medical College \& Mitford Hospital. 
+	Proven expertise in executing department activities, managing emergencies, and conducting comprehensive medical assessments. 
+	Skilled in specialized procedures, infection control, and surgical assistance. 
+	Strong communicator with experience in crafting discharge certificates, death notes, and medical records.  
+	Committed to become an ethical and safe surgeon.  
+	Ready to contribute as a medical officer in a dynamic surgical department.
+\end{minipage}
+
+\begin{minipage}[t][15cm]{\textwidth}
+\section*{Experience}
+\resumeentry{Internship}{October, 2022 - September, 2023}\\ Sir Salimullah Medical College \& Mitford Hospital, Dhaka 
+\begin{itemize}[left=1em, itemsep=0pt, parsep=0pt]
+	\item Executed department activities under consultant guidance.
+	\item Attended daily ward rounds, providing medical management for outpatient, inpatient, and staff members.
+	\item Conducted comprehensive history taking and clinical examination for over 300 patients, refining my skills in thorough medical assessments.
+	\item Managed emergency situations, including acute urinary retention (5+), gut obstruction (5+), gut perforation (3+), and acute appendicitis (15+), showcasing quick and decisive medical interventions.
+	\item Demonstrated expertise in specialized procedures e.g. catheterization (10+), NG Tube insertion (20+), blood transfusion (50+), ensuring patient safety and protocol adherence.
+	\item Maintained meticulous infection control practices through over 30 instances of scrubbing, gowning, and gloving.
+	\item Assisted in a range of surgical procedures, including appendectomies (15+), cesarean sections (15+), hernioplasties, emergency laparotomies, showcasing versatility in surgical assistance.
+	\item Authored 200+ discharge certificates, 10+ death notes, and over 50 operation notes, pre- and postoperative orders, ensuring precise and comprehensive medical records.
+	\item Applied plaster in multiple cases, showcasing skills in orthopedic care.
+\end{itemize}
+\end{minipage}
+\newpage
+\begin{minipage}[t][10.2cm]{\textwidth}
+\raggedright
+\section*{Education}
+\resumeentry{FCPS Part-1}{January, 2024}\\ Orthopedic Surgery \vspace{0.3cm}\\
+\resumeentry{MBBS}{January, 2017 - May, 2022}\\ Sir Salimullah Medical College, Dhaka
+\begin{itemize}[left=0em, itemsep=0pt, parsep=0pt]
+  \item Honors in Anatomy, Physiology, Biochemistry, Pathology, Pharmacology, Microbiology, Medicine and Surgery.
+	\item 8th, 8th and 9th place in 1st, 3rd and Final Professional Examination respectively
+\end{itemize}
+\textbf{HSC}, \textit{2016} - Notre Dame College, Dhaka \\
+\textbf{SSC}, \textit{2014} - A.K. High School, Dhaka \\
+\end{minipage}
+\begin{minipage}[t][6cm]{0.45\textwidth}
+\raggedright
+\section*{Skills}
+\begin{itemize}[left=0em, itemsep=0pt, parsep=0pt]
+  \item Clinical Expertise
+	\item Emergency Management
+	\item Surgical Assistance
+	\item Documentation and Communication
+	\item Team Collaboration
+	\item Adaptability
+\end{itemize}
+\end{minipage}
+\hspace{0.1\textwidth}
+\begin{minipage}[t][6cm]{0.45\textwidth}
+	\section*{Contact}
+  \begin{minipage}[h][3cm][t]{0.08\textwidth}
+      \faPhone\\
+      \faMapMarker\\
+      \faEnvelopeO
+  \end{minipage}
+  \begin{minipage}[h][3cm][t]{0.9\textwidth}
+      01521 430 992\\
+      490, North Donia, Jatrabari, Dhaka\\
+      dr.asadul.algalib@gmail.com
+  \end{minipage}
+\end{minipage}
+\begin{minipage}[b][6cm]{0.3\textwidth}
+\par\noindent\rule{\textwidth}{0.4pt}
+\centering{Signature}
+\end{minipage}
+
+\end{document}

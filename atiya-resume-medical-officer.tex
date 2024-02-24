@@ -1,0 +1,105 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[left=1in,right=1in,top=0.9in,bottom=0.9in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{fontawesome}
+%% \usepackage{tcolorbox}
+%% \usepackage{tikz}
+
+% Set the font to Arial
+\usepackage{fontspec}
+\setmainfont{Lato}[Scale=1.0]
+
+% Define custom colors
+\definecolor{darkblue}{RGB}{0,0,139}
+\definecolor{gray}{RGB}{128,128,128}
+
+% Customize section headings
+\titleformat{\section}{\Large\bfseries\color{black}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0em}{2em}{0.8em}
+
+\linespread{1.3}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\setlength{\parindent}{0pt}  % Remove first-line indent
+
+% Define a command for the main resume entries
+\newcommand{\resumeentry}[2]{
+    \textbf{#1} \\
+    \textit{#2}
+}
+
+\pagestyle{empty} % Disable page numbering
+
+\begin{document}
+\begin{minipage}[t][2.4cm]{\textwidth}
+    \raggedright
+    {\Huge\bfseries\color{black}Dr. Atiya Fyruz} \\
+    \large{BMDC Reg. No - 126871}
+\end{minipage}
+\begin{minipage}[t][17cm]{\textwidth}
+  \section*{Profile}
+	Dynamic medical professional with a comprehensive educational background and impactful internship at Sir Salimullah Medical College \& Mitford Hospital. 
+	Conducted patient assessments, actively contributed to treatment plans, and proficiently executed diverse medical procedures under supervision. 
+	Seeking to leverage academic and practical experience in a dynamic healthcare environment.
+	\\
+\section*{Experience}
+	\resumeentry{Internship}{October, 2022 - September, 2023}\\ Sir Salimullah Medical College \& Mitford Hospital \vspace{0.2cm}
+\begin{itemize}[left=0em, topsep=0pt, itemsep=4pt, parsep=0pt]
+	\item Provided comprehensive treatment to patients on both inpatient and outpatient bases, demonstrating versatility in delivering healthcare across varied settings.
+	\item Actively participated in 1200+ patient assessments, including history-taking, physical examinations, and the timely ordering of diagnostic tests.
+  \item Collaborated closely with a multidisciplinary medical team, actively engaging in daily rounds and contributing to treatment plans for 300+ patients during the internship.
+  \item Performed medical procedures, including wound dressings (50+), wound closure (10+), catheterization (10+), NG tube insertion (20+), paracentesis (5+), blood transfusion (100+), chemotherapy (5+) under direct supervision, consistently adhering to established medical standards and safety protocols.
+	\item Provided daily follow-ups to patients, ensuring ongoing monitoring and adjustment of treatment plans for optimal recovery.
+	\item Engaged in continuous and personalized communication with patients, effectively conveying treatment plans, preventive healthcare measures, and post-discharge care instructions to over 500 individuals. Demonstrated strong communication skills by providing ongoing counseling to both patients and their attendants throughout their healthcare experience.
+	\item Applied strong documentation skills by writing order sheets for patients, preoperative and postoperative orders, death certificates, and maintaining the admission register.
+\end{itemize}
+\end{minipage}
+\newpage
+\begin{minipage}[t][7.4cm]{\textwidth}
+\raggedright
+\section*{Education}
+\resumeentry{MBBS}{January, 2017 - May, 2022}\\ Sir Salimullah Medical College \vspace{0.2cm} \\ 
+\textbf{HSC}, \textit{2016}\\ Holy Cross College, Dhaka \vspace{0.2cm} \\
+\textbf{SSC}, \textit{2014}\\ Mohammadpur Preparatory High School, Dhaka \\
+\end{minipage}
+\begin{minipage}[t][8cm]{0.45\textwidth}
+\section*{Skills}
+\begin{itemize}[left=0em, itemsep=0pt, parsep=0pt]
+  \item Emergency management
+	\item Medical Proficiency
+	\item Patient Assessment
+	\item Multidisciplinary Collaboration
+	\item Medical Procedures
+	\item Patient Follow-up
+	\item Effective Communication
+	\item Documentation Proficiency
+\end{itemize}
+\end{minipage}
+\hspace{0.5cm}\hspace{0.5cm}
+\begin{minipage}[t][8cm]{0.45\textwidth}
+\section*{Contact}
+    \begin{minipage}[t]{0.1\textwidth}
+        \faPhone\\
+        \faMapMarker\\
+        \faEnvelopeO
+        %\faLinkedin
+    \end{minipage}
+    \begin{minipage}[t]{0.7\textwidth}
+        01782 400 884\\
+        Dhanmondi, Dhaka\\
+        atiyafyruz132@gmail.com
+        %linkedin.com/in/yourprofile
+    \end{minipage}
+%\section*{References}
+%Available upon request.
+\end{minipage}
+\\
+\begin{minipage}[b][6cm]{0.3\textwidth}
+\par\noindent\rule{\textwidth}{0.4pt}
+\centering{Signature}
+\end{minipage}
+\end{document}
